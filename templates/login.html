@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SecureCredit Shield</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+
+<!-- LOGIN BOX -->
+
+<div class="login-container">
+
+    <div class="logo">
+        <span>🛡</span>
+        <h1>Vaultix Secure</h1>
+    </div>
+
+    <p class="subtitle">
+        Secure access to your fraud protection dashboard with
+        advanced AI-powered cybersecurity.
+    </p>
+
+    <form id="loginForm">
+
+        <!-- USERNAME -->
+
+        <div class="input-box">
+
+            <label>Username</label>
+
+            <input 
+            type="text"
+            id="username"
+            placeholder="Enter your username"
+            required
+            >
+
+            <small id="userError"></small>
+
+        </div>
+
+        <!-- EMAIL -->
+
+        <div class="input-box">
+
+            <label>Email Address</label>
+
+            <input 
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+            >
+
+            <small id="emailError"></small>
+
+        </div>
+
+        <!-- PASSWORD -->
+
+        <div class="input-box">
+
+            <label>Password</label>
+
+            <input 
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+            >
+
+            <small id="passError"></small>
+
+        </div>
+        <div class="btn-center">
+        <button  center type="submit" class="login-btn">
+            Secure Login
+        </button>
+        </div>
+    </form>
+
+    <div class="extra-links">
+
+        <a href="#" id="forgotBtn">
+            Forgot Password?
+        </a>
+
+        <a href="create.html">
+            Create Account
+        </a>
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
