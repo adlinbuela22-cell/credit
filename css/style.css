@@ -1,3 +1,5 @@
+/* STYLE.CSS */
+
 *{
     margin:0;
     padding:0;
@@ -345,6 +347,7 @@ button:hover{
 
     backdrop-filter: blur(10px);
 }
+
 .back-btn{
     display:block;
     margin:20px auto;
@@ -416,7 +419,7 @@ button:hover{
     color:#ffffff;
 }
 
-/* MODERN GRID LAYOUT */
+/* FEATURE GRID */
 
 .feature-grid{
     width:100%;
@@ -460,8 +463,6 @@ button:hover{
     overflow:hidden;
 }
 
-/* TOP GLOW LINE */
-
 .card::before{
     content:'';
 
@@ -481,8 +482,6 @@ button:hover{
     );
 }
 
-/* HOVER EFFECT */
-
 .card:hover{
     transform:
     translateY(-12px);
@@ -491,8 +490,6 @@ button:hover{
     0 0 30px rgba(56,189,248,0.25);
 }
 
-/* ICON */
-
 .card-icon{
     font-size:55px;
     margin-bottom:20px;
@@ -500,8 +497,6 @@ button:hover{
     filter:
     drop-shadow(0 0 10px #38bdf8);
 }
-
-/* HEADING */
 
 .card h2,
 .card h3{
@@ -514,14 +509,79 @@ button:hover{
     font-weight:700;
 }
 
-/* TEXT */
-
 .card p{
     font-size:18px;
 
     color:#dbeafe;
 
     line-height:1.9;
+}
+
+/* IDENTITY PROTECTION PAGE */
+
+.identity-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px;
+}
+
+.identity-title{
+    text-align:center;
+    font-size:60px;
+    margin-bottom:20px;
+    color:#7dd3fc;
+}
+
+.identity-subtitle{
+    text-align:center;
+    font-size:20px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:60px;
+}
+
+.identity-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.identity-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:40px 30px;
+    backdrop-filter:blur(18px);
+
+    transition:0.4s ease;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.25);
+}
+
+.identity-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 30px rgba(56,189,248,0.25);
+}
+
+.identity-card h2{
+    font-size:28px;
+    color:#7dd3fc;
+    margin-bottom:18px;
+}
+
+.identity-card p{
+    font-size:17px;
+    line-height:1.9;
+    color:#dbeafe;
+}
+
+.identity-icon{
+    font-size:60px;
+    margin-bottom:20px;
 }
 
 /* FORM CONTAINER */
@@ -853,5 +913,341 @@ input[type="range"]{
     .card h3{
         font-size:25px;
     }
+
+    .identity-title{
+        font-size:42px;
+    }
+
+    .identity-subtitle{
+        font-size:17px;
+    }
+
+    .identity-container{
+        padding:30px 20px;
+    }
+
+}
+/* DASHBOARD */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    text-align:center;
+}
+
+.transaction-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+
+.transaction-table th,
+.transaction-table td{
+    padding:15px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.transaction-table th{
+    background:rgba(56,189,248,0.2);
+    color:#7dd3fc;
+}
+
+.transaction-table tr{
+    background:rgba(255,255,255,0.04);
+}
+
+.safe{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.danger{
+    color:#ef4444;
+    font-weight:bold;
+}
+.dashboard-card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+
+
+margin-top:40px;
+
+padding:30px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,0.06);
+
+border:1px solid rgba(255,255,255,0.1);
+
+backdrop-filter:blur(15px);
+
+box-shadow:
+0 0 30px rgba(56,189,248,0.2);
+
+}
+
+.card-preview h2{
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.card-preview p{
+
+font-size:18px;
+
+margin:12px 0;
+
+color:#dbeafe;
+
+}
+
+.error{
+
+color:#ef4444;
+
+font-size:14px;
+
+display:block;
+
+margin-top:6px;
+
+}
+/* AI RISK ANALYSIS */
+
+.risk-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.risk-card{
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.08);
+
+text-align:center;
+
+transition:0.4s ease;
+
+}
+
+.risk-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 0 25px rgba(56,189,248,0.25);
+
+}
+
+.risk-card h2{
+
+font-size:22px;
+
+margin-bottom:15px;
+
+color:#38bdf8;
+
+}
+
+.risk-card p{
+
+font-size:18px;
+
+font-weight:600;
+
+color:#dbeafe;
+
+}
+/* SPENDING ANALYTICS */
+
+.analytics-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.analytics-card{
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.08);
+
+text-align:center;
+
+transition:0.4s ease;
+
+}
+
+.analytics-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 0 25px rgba(56,189,248,0.25);
+
+}
+
+.analytics-card h2{
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+font-size:22px;
+
+}
+
+.analytics-card p{
+
+font-size:24px;
+
+font-weight:700;
+
+color:#dbeafe;
+
+}
+/* NOTIFICATION CENTER */
+
+.notifications-list{
+
+    margin-top:35px;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.notification-card{
+
+    padding:25px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    transition:0.4s ease;
+
+}
+
+.notification-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,0.25);
+
+}
+
+.notification-card h2{
+
+    color:#38bdf8;
+
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.notification-card p{
+
+    color:#dbeafe;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+/* FRAUD REPORT CENTER */
+
+.reply-box{
+
+margin-top:35px;
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.reply-box h2{
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+}
+
+.reply-box p{
+
+color:#dbeafe;
+
+line-height:1.8;
+
+}
+
+select{
+
+width:100%;
+
+padding:16px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,0.08);
+
+border:1px solid rgba(255,255,255,0.08);
+
+color:white;
+
+outline:none;
+
+}
+
+select option{
+
+background:#111827;
+
+color:white;
 
 }
