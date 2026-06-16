@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cards</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="cursor-dot"></div>
+
+<div class="container">
+
+<div class="logo">
+<span>💳</span>
+<h1>My Credit Card</h1>
+</div>
+
+<p class="subtitle">
+Manage and secure your credit card details.
+</p>
+
+<form id="cardForm">
+
+<div class="input-box">
+<label>Card Holder Name</label>
+<input type="text" id="cardName">
+<small id="nameError" class="error"></small>
+</div>
+
+<div class="input-box">
+<label>Card Number</label>
+<input type="text" id="cardNumber"
+placeholder="1234567812345678">
+<small id="cardError" class="error"></small>
+</div>
+
+<div class="input-box">
+<label>Expiry Date (MM/YY)</label>
+<input type="text" id="expiry"
+placeholder="12/28">
+<small id="expiryError" class="error"></small>
+</div>
+
+<div class="input-box">
+<label>CVV</label>
+<input type="password" id="cvv">
+<small id="cvvError" class="error"></small>
+</div>
+
+<div class="input-box">
+<label>Credit Limit</label>
+<input type="number" id="limit">
+<small id="limitError" class="error"></small>
+</div>
+
+<button type="submit" class="create-btn">
+Save Card
+</button>
+
+</form>
+
+<div id="cardPreview" style="display:none;">
+
+<div class="card-preview">
+
+<h2>💳 Visa Card</h2>
+
+<p id="showName"></p>
+
+<p id="showNumber"></p>
+
+<p id="showExpiry"></p>
+
+<p>Status : Active ✅</p>
+
+</div>
+
+</div>
+
+<div class="btn-box">
+
+<button onclick="lockCard()">
+Lock Card
+</button>
+
+<button onclick="reportLost()">
+Report Lost Card
+</button>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

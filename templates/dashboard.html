@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+
+<div class="container">
+
+    <div class="logo">
+        <span>📊</span>
+        <h1>Security Dashboard</h1>
+    </div>
+
+    <p class="subtitle">
+        Real-Time Credit Card Fraud Monitoring System
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Total Transactions</h2>
+            <p id="transactions">1,245</p>
+        </div>
+
+        <div class="card">
+            <h2>Fraud Attempts Blocked</h2>
+            <p id="frauds">28</p>
+        </div>
+
+        <div class="card">
+            <h2>Protection Status</h2>
+            <p id="status">🟢 Active</p>
+        </div>
+
+        <div class="card">
+            <h2>Risk Score</h2>
+            <p id="risk">Low Risk</p>
+        </div>
+
+    </div>
+
+    <div class="btn-box">
+        <button onclick="refreshDashboard()">
+            Refresh Dashboard
+        </button>
+
+        <button class="secondary-btn"
+        onclick="location.href='index.html'">
+            Back Home
+        </button>
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

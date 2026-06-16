@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Report Center</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="cursor-dot"></div>
+
+<div class="container">
+
+<div class="logo">
+<span>🚨</span>
+<h1>Fraud Report Center</h1>
+</div>
+
+<p class="subtitle">
+Report suspicious transactions and receive investigation updates.
+</p>
+
+<form id="fraudReportForm">
+
+<div class="input-box">
+
+<label>Transaction ID</label>
+
+<input
+type="text"
+id="transactionId"
+placeholder="TXN123456">
+
+<small
+id="txnError"
+class="error"></small>
+
+</div>
+
+<div class="input-box">
+
+<label>Transaction Amount</label>
+
+<input
+type="number"
+id="amount"
+placeholder="5000">
+
+<small
+id="amountError"
+class="error"></small>
+
+</div>
+
+<div class="input-box">
+
+<label>Reason</label>
+
+<select id="reason">
+
+<option value="">
+Select Reason
+</option>
+
+<option>
+Unauthorized Transaction
+</option>
+
+<option>
+Card Stolen
+</option>
+
+<option>
+Unknown Merchant
+</option>
+
+<option>
+Suspicious Activity
+</option>
+
+</select>
+
+<small
+id="reasonError"
+class="error"></small>
+
+</div>
+
+<button type="submit">
+Submit Report
+</button>
+
+</form>
+
+<div class="reply-box">
+
+<h2>📨 Investigation Status</h2>
+
+<p id="supportReply">
+
+No reports submitted yet.
+
+</p>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

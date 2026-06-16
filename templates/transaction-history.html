@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+
+<div class="container">
+
+    <div class="logo">
+        <span>💳</span>
+        <h1>Transaction History</h1>
+    </div>
+
+    <p class="subtitle">
+        View all recent credit card transactions and fraud status.
+    </p>
+
+    <table class="transaction-table">
+
+        <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>12-06-2026</td>
+            <td>₹5,000</td>
+            <td>Chennai</td>
+            <td class="safe">Safe ✅</td>
+        </tr>
+
+        <tr>
+            <td>11-06-2026</td>
+            <td>₹25,000</td>
+            <td>Bangalore</td>
+            <td class="safe">Safe ✅</td>
+        </tr>
+
+        <tr>
+            <td>10-06-2026</td>
+            <td>₹75,000</td>
+            <td>Delhi</td>
+            <td class="danger">Suspicious ⚠️</td>
+        </tr>
+
+    </table>
+
+    <div class="btn-box">
+        <button onclick="addTransaction()">
+            Add Transaction
+        </button>
+
+        <button class="secondary-btn"
+        onclick="window.location.href='index.html'">
+            Back Home
+        </button>
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

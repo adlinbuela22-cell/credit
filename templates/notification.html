@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notification Center</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="cursor-dot"></div>
+
+<div class="container">
+
+    <div class="logo">
+        <span>🔔</span>
+        <h1>Notification Center</h1>
+    </div>
+
+    <p class="subtitle">
+        Stay updated with security alerts and account activities.
+    </p>
+
+    <div class="notifications-list" id="notificationsList">
+
+        <div class="notification-card">
+            <h2>🔒 Card Locked</h2>
+            <p>Your credit card has been locked successfully.</p>
+        </div>
+
+        <div class="notification-card">
+            <h2>🤖 AI Analysis Completed</h2>
+            <p>No suspicious transactions detected.</p>
+        </div>
+
+        <div class="notification-card">
+            <h2>🛡 Identity Protection</h2>
+            <p>Identity protection has been enabled.</p>
+        </div>
+
+    </div>
+
+    <div class="btn-box">
+
+        <button id="addNotificationBtn">
+            Generate Notification
+        </button>
+
+        <button class="secondary-btn"
+        onclick="window.location.href='index.html'">
+            Back
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
